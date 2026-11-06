@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Food Awareness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Healthy<span>Food</span></h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#finder">Find Recipes</a></li>
+                <li><a href="#tips">Health Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Eat Healthy, Live Healthy!</h1>
+            <p>
+                Discover delicious and nutritious recipes.
+                Make healthy eating a part of your everyday life.
+            </p>
+            <a href="#recipes" class="btn">Explore Recipes</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Healthy Food</h2>
+        <p class="about-text">
+            Healthy Food Awareness helps people understand
+            the importance of nutritious food and balanced diets.
+            Our website provides healthy recipes, food suggestions
+            and useful health tips for everyday life.
+        </p>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>🥗 Eat Fresh</h3>
+                <p>Choose fresh fruits and vegetables.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🍎 Balanced Diet</h3>
+                <p>Eat different types of nutritious foods.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>💧 Stay Hydrated</h3>
+                <p>Drink enough water every day.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🥦 Avoid Junk</h3>
+                <p>Reduce highly processed foods.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="section recipes-section">
+        <h2>Healthy Recipes</h2>
+        <p>Explore simple and nutritious recipes.</p>
+
+        <div class="recipe-grid" id="recipeList">
+            <!-- Recipes added using JavaScript -->
+        </div>
+    </section>
+
+    <!-- Recipe Finder -->
+    <section id="finder" class="section finder-section">
+
+        <h2>Find Recipes With Your Ingredients</h2>
+
+        <p>
+            Enter the ingredients available in your kitchen.
+            We will suggest healthy recipes for you!
+        </p>
+
+        <div class="finder-box">
+            <input
+                type="text"
+                id="ingredientInput"
+                placeholder="Example: Rice, Tomato, Onion"
+            >
+
+            <button onclick="findRecipes()">
+                Find My Recipes
+            </button>
+        </div>
+
+        <p class="example">
+            Example: Rice, Tomato, Onion, Oats, Banana, Egg
+        </p>
+
+        <div id="searchResults" class="recipe-grid"></div>
+
+    </section>
+
+    <!-- Health Tips -->
+    <section id="tips" class="section">
+        <h2>Healthy Eating Tips</h2>
+
+        <div class="tips-grid">
+
+            <div class="tip-card">
+                <h3>🍎 Eat Fruits</h3>
+                <p>Include fresh fruits in your daily diet.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3>💧 Drink Water</h3>
+                <p>Drink water regularly to stay hydrated.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3>🥗 Eat Vegetables</h3>
+                <p>Include green vegetables in your meals.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3>🍽️ Eat on Time</h3>
+                <p>Follow regular and balanced meal timings.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2>Contact Us</h2>
+        <p>Share your feedback with us.</p>
+
+        <form id="contactForm">
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="contactMessage"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>HealthyFood</h3>
+        <p>Eat Healthy, Stay Healthy!</p>
+        <p>© 2026 Healthy Food Awareness. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

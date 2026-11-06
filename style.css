@@ -1,0 +1,349 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7fff7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+
+header {
+    background-color: #1b5e20;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+}
+
+.logo span {
+    color: #a5d6a7;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #b9f6ca;
+}
+
+/* Home Section */
+
+.hero {
+    min-height: 500px;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1600")
+        center/cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #66bb6a;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #2e7d32;
+}
+
+/* Common Section */
+
+.section {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #1b5e20;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* About */
+
+.about-text {
+    max-width: 850px;
+    margin: 15px auto 35px;
+}
+
+.features,
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feature-card,
+.tip-card {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.feature-card h3,
+.tip-card h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+/* Recipes */
+
+.recipes-section {
+    background-color: #edf7ed;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.recipe-content {
+    padding: 18px;
+}
+
+.recipe-content h3 {
+    color: #1b5e20;
+    margin-bottom: 8px;
+}
+
+.recipe-content p {
+    margin-bottom: 10px;
+}
+
+.recipe-content button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recipe-content button:hover {
+    background: #1b5e20;
+}
+
+/* Recipe Finder */
+
+.finder-section {
+    background: #e8f5e9;
+}
+
+.finder-box {
+    max-width: 750px;
+    margin: 25px auto 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.finder-box input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.finder-box button {
+    padding: 15px 20px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.finder-box button:hover {
+    background: #1b5e20;
+}
+
+.example {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Tips */
+
+.tips-grid {
+    margin-top: 30px;
+}
+
+/* Contact */
+
+.contact-section {
+    background: #edf7ed;
+}
+
+#contactForm {
+    max-width: 500px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#contactForm textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#contactForm button {
+    padding: 13px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactMessage {
+    color: #1b5e20;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .features,
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .features,
+    .tips-grid,
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .finder-box {
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 29px;
+    }
+
+    .section {
+        padding: 45px 5%;
+    }
+}
